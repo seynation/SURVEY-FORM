@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1 id="title" class="text-center">A Beautiful Survey Form</h1>
+			<p id="description" class="descr text-center">This is a Survey form, please fill each field.</p>
+		</header>
+		<form id="survey-form">
+			<div class="form-group">
+				<label for="firstname" id="name-label">First Name</label>
+					<input type="text" name="firstname" placeholder="Enter First Name" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="lastname" id="lastname-label">Last Name</label>
+					<input type="text" name="firstName" placeholder="Enter Last Name" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="email" id="email-label">E-mail</label>
+					<input type="email" required="true" id="email" placeholder="Email" class="form-control">		
+			</div>
+			<div class="form-group">
+				<label for="number" id="number-label">Phone Number</label>
+					<input type="number" id="number" placeholder="Number" min="10" class="form-control">
+				
+			</div>
+			<div class="form-group">
+				<p>Select an Input</p>
+				<label for="dropdown" id="dropdown-label">
+					<select id="dropdown" name="dropdown" required class="form-control">
+						<option disabled selected value>Value number 1</option>
+						<option>Value number 2</option>
+						<option>Value number 3</option>
+						<option>Value number 4</option>
+					</select>
+				</label>
+			</div>
+			<div class="form-group">
+				<p>Select Checkboxes that Applies</p>
+				<label for="checkbox1" id="checkbox-label">
+					<input type="checkbox" name="checkbox1" class="input-checkbox"> Checkbox One
+				</label>
+				<label for="checkbox2">
+					<input type="checkbox" name="checkbox2" class="input-checkbox"> Checkbox Two
+				</label>
+				<label for="checkbox3">
+					<input type="checkbox" name="checkbox3" class="input-checkbox"> Checkbox Three
+				</label>
+			</div>
+			<div class="form-group">
+				<p>Select Radio Button that Applies</p>
+				<label>
+					<input type="radio" name="radio-input" value="radio-one" class="input-radio">Radio One
+				</label>
+				<label>
+					<input type="radio" name="radio-input" value="radio-two" class="input-radio">Radio Two
+				</label>
+				<label>
+					<input type="radio" name="radio-input" value="radio-three" class="input-radio">Radio Three
+				</label> 
+			</div>
+			<div class="form-group">
+				<p>Write down your comments in this</p>
+				<textarea id="comments" class="input-textarea" name="comments" placeholder="Write Your Comment here"></textarea>
+			</div>
+			<button class="submit-button" id="submit-button">Submit</button>
+		</form>
+		
+	</div>	
+</body>
+</html>
